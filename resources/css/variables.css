@@ -1,0 +1,51 @@
+:root {
+
+  --color-primary: #004ac0;
+  --color-primary-dark: #003a97;
+  --color-secondary: #28b77c;
+
+  /* color black white */
+  --color-black: #040D25;
+  --color-white: #FFFFFF;
+
+  /* color grey */
+  --color-grey: #757575;
+  --color-grey-light: #e1e1e1;
+  --color-grey-lighter: #f5f5f5;
+
+  /* color green */
+  --color-green: #28b77c;
+  --color-green-dark: #01ab65;
+  --color-green-light: #d6fbec;
+
+  /* color red */
+  --color-red: #ff3939;
+  --color-red-light: #ffd6d6;
+
+  /* color yellow */
+  --color-yellow: #F2994A;
+  --color-yellow-light: #FFF1E5;
+
+  /* typography */
+  --font-family: "Assistant", sans-serif;
+  --font-size: 1.6rem;
+
+  /* borders */
+  --border-radius: 0.25rem;
+  /* box shadow */
+  --box-shadow: 0 0.15rem 0.5rem rgb(0 0 0 / 5%);
+
+  /* ease */
+  --ease: cubic-bezier(0.75, 0.5, 0.05, 1);
+
+  /* screen sizes */
+  --full: 100%;
+  /* 192rem; */
+  --hd: 1920px;
+  /* 144rem; */
+  --xl: 1440px;
+  /* 102.4rem; */
+  --lg: 1024px;
+  /* 76.8rem; */
+  --md: 768px;
+}

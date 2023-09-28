@@ -1,0 +1,86 @@
+.sidemodal {
+  display: flex;
+  flex-direction:column;
+  height: 100%;
+  padding-top: 6.25rem;
+  width: 55rem;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 0;
+  left: -55rem;
+  background-color: #fff;
+  color: #212121;
+  z-index: 2;
+  transition: left 500ms var(--ease);
+}
+.sidemodal.active {
+  left: 0;
+}
+@media (max-width: 767px) {
+  .sidemodal.active {
+    width: 100%;
+  }
+}
+
+.sidemodal-header {
+  position: relative;
+  padding: 2.5rem;
+  background-color: #fff;
+  border-bottom: 0.1rem solid #eee;
+}
+
+
+.sidemodal-header h2 {
+  font-size: 2.15rem;
+  margin: 0;
+}
+.sidemodal-header .sidemodal-close--button {
+  position: absolute;
+  top: 2.5rem;
+  left: 1.5rem;
+  cursor: pointer;
+}
+.sidemodal-header .sidemodal-close--button i {
+  font-size: 1.8rem;
+}
+
+.sidemodal-content {
+  padding: 2.5rem;
+  background-color: white;
+}
+
+.sidemodal-footer {
+  border-top: 0.1rem solid #eee;
+  padding: 2.5rem;
+  margin-top: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.sidemodal-footer button:first-child {
+  width: 15.5rem;
+}
+.sidemodal-footer button {
+  width: 10.5rem;
+}
+
+.sidemodal-backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  z-index: 1;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms ease, visibility 250ms ease;
+}
+.sidemodal-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}

@@ -1,0 +1,80 @@
+.suggestions {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.suggestion-holder {
+  position: relative;
+
+}
+
+.input-suggestion {
+  width: 100%;
+  padding: 0 1.5rem;
+  height: 4.5rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid var(--color-grey-light);
+  border-radius: 0.25rem;
+}
+
+.input-suggestion:hover,
+.input-suggestion:focus {
+  border: 0.1rem solid var(--color-primary);
+}
+
+.add-item-button {
+  position: absolute;
+  top: 0.85rem;
+  left: 1.5rem;
+  
+  font-size: 2.25rem;
+  color: var(--color-grey);
+  cursor: pointer;
+}
+.add-item-button:hover,
+.add-item-button:focus {
+  color: var(--color-green);
+}
+
+ul.suggestion-list {
+  position: absolute;
+  top: calc(100% - 0.15rem);
+  width: 100%;
+  border: 1px solid var(--color-grey-light);
+  border-top: 0;
+  background-color: #fff;
+  max-height: 25rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1;
+  border-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: var(--box-shadow);
+}
+
+ul.suggestion-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+  padding: 0 1.5rem;
+  border-top: 0.1rem solid var(--color-grey-light);
+  font-size: var(--font-size);
+  cursor: pointer;
+}
+ul.suggestion-list li:hover,
+ul.suggestion-list li:focus {
+  background-color: var(--color-grey-lighter);
+}
+
+ul.suggestion-list .remove-button {
+  font-size: 2.25rem;
+  color: var(--color-grey);
+  cursor: pointer;
+}
+
+ul.suggestion-list .remove-button:hover,
+ul.suggestion-list .remove-button:focus {
+  color: var(--color-red);
+}

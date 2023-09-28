@@ -1,0 +1,17 @@
+/* https://fonts.google.com/specimen/Assistant */
+
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''), url('../fonts/Assistant-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local(''), url('../fonts/Assistant-SemiBold.ttf') format('truetype');
+}
